@@ -1,7 +1,7 @@
 # Pagina web de servicios industriales asociados
 # Autor: Erick Ortiz
-# Fecha: 7-10-24
-# Versión: 1.0
+# Fecha: 21-12-24
+# Versión: 2.0
 
 Este proyecto de paginá sera destinada a la presentación de un servicio de mantenimiento edilicio completo en base al manteimiento correctivo, preventivo y predictivo.
 

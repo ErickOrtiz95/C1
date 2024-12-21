@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <title>Servicios Industriales Asociados</title>
+    <link rel="icon" href="img/LOGO SIA 2.0.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!--Acá estamos dentro del header -->
+        <img src="img/LOGO SIA 2.0.png" alt="Logo servicios industriales asociados" width="130" height="130"
+            class="redondo">
+        <nav>
+            <!--Botones del menú de navegación-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#quienessomos">Quienes somos</a></li>
+                <li><a href="Tienda.html">Tienda de Servicios y Productos</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="index.html#clientes">Clientes</a></li>
+                <li><a href="#contactos">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Formulario de contactos-->
+        <div class="boxcontactos">
+            <h1>Contáctenos</h1>
+            <form id="formulario" action="https://formspree.io/f/xanyngoa" method="post" onsubmit="return validarFormulario()">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <label for="nombre">Tu nombre completo o Empresa:
+                        <input id="nombre" type="text" name="nombre" size="30" placeholder="Nombre o Empresa" required>
+                        <span id="errorNombre" class="error"></span>
+                    </label>
+                    <p></p>
+                    <label for="email">E-mail:
+                        <input id="email" size="30" type="email" name="email" placeholder="Escribe aquí tu e-mail" required>
+                    </label>
+                    <p></p>
+                    <label for="phone">Número de teléfono:
+                        <input id="phone" type="tel" name="phone" size="14" placeholder="Escribe tu número" required>
+                    </label>
+                    <p></p>
+                    <label for="edad">Edad:
+                        <input id="edad" type="text" name="edad" size="10" placeholder="Años de edad" required>
+                        <span id="errorEdad" class="error"></span>
+                    </label>
+                    <p></p>
+                    <label for="comentarios">Comentarios: <br>
+                        <textarea id="comentarios" rows="5" cols="50" name="comentarios" placeholder="Escríbenos aquí tus consultas.."></textarea>
+                    </label>
+                </fieldset>
+                <p></p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar datos">
+            </form>
+            <p></p>
+        </div>
+
+        <!--Seccion de ubicaciones-->
+        <div class="boxcontactos">
+            <h3>Visitanos en nuestras oficinas de:</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11345.077330437478!2d-58.7358444660456!3d-34.42404772215759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca1e3f2c27c93%3A0x56c68faf580f6ae6!2sMitre%20esquina%2C%20B1619%20Garin%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1729758582128!5m2!1ses!2sar"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!--Seccion de Reseñas-->
+        <section class="reseñas">
+            <div class="card">
+                <h2>Jefe de mantenimiento Naturgy</h2>
+                <p>La verdad estoy muy satisfecho de haber contratado este servicio, nos dejaron en funcionamiento las
+                    calderas de los vestuarios.</p>
+            </div>
+            <div class="card">
+                <h2>Agro Energy</h2>
+                <p>Nos realizaron todo el mantenimiento completo de los sistemas de gas, un servicio muy efectivo.</p>
+            </div>
+            <div class="card">
+                <h2>SKF group</h2>
+                <p>Muy profesionales en lo que hacen.</p>
+            </div>
+            <div class="card">
+                <h2>Departamento de compras F.S</h2>
+                <p>Hicimos compras de productos de refrigeracion, realizaron todo en tiempo y forma, ademas de muy
+                    buenos precios.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contactos">
+        <!-- Aca estamos dentro del footer con 3 columnas de informacion adicional-->
+        <div class="general">
+            <div class="contenedoras">
+                <h3>Explora nuestros servicios</h3>
+                <ul>
+                    <li><a href="Tienda.html#ME">Mantenimiento Edilicio</a></li>
+                    <li><a href="Tienda.html#MI">Mantenimiento Industrial</a></li>
+                    <li><a href="Tienda.html#SE">Seguridad Electrónica</a></li>
+                    <li><a href="Tienda.html#FC">Fabricación de Carrocerías</a></li>
+                    <li><a href="Tienda.html#SP">Servicios Personalizados</a></li>
+            </div>
+            <div class="contenedoras">
+                <h3>Redes Sociales</h3>
+                <p>
+                    LinkedIn
+                    <br>
+                    <a href="https://www.youtube.com/@ServiciosIndustrialesAsociados">Youtube</a>
+                    <br>
+                    Instagram
+                    <br>
+                    Facebook
+                    <br>
+                    Tik Tok
+                    <br>
+                </p>
+            </div>
+            <div class="contenedoras">
+                <h3>Información de contacto</h3>
+                <p> Servicios industriales asociados
+                    <br>
+                    Escobar - Buenos Aires
+                    <br>
+                    Tel: 0800 3485000
+                    <br>
+                    <a href="mailto:servicioindustrial.as@gmail.com">servicioindustrial.as@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
